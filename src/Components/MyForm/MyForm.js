@@ -59,40 +59,42 @@ export default function MyForm() {
 
   return (
     <div className="form-modal">
-      <h1 className="info-title">Vos informations</h1>
-      {error && (
-        <h4 className="validation-msg error">
-          Attention, il faut remplir tous les champs
-        </h4>
-      )}
+      <div className="first-block">
+        <h1 className="info-title">Vos informations</h1>
+        {error && (
+          <h4 className="validation-msg error">
+            Attention, il faut remplir tous les champs
+          </h4>
+        )}
 
-      <form onSubmit={submitForm}>
-        <div className="form-group">
-          <label htmlFor="lastname">Votre nom</label>
-          <input
-            value={inputName}
-            onChange={(e) => inputNameChange(e.target.value)}
-            type="text"
-            name="lastname"
-            id="lastname"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="age">Votre âge</label>
-          <input
-            value={inputAge}
-            onChange={(e) => inputAgeChange(e.target.value)}
-            type="number"
-            name="age"
-            id="age"
-          />
-        </div>
+        <form onSubmit={submitForm}>
+          <div className="form-group">
+            <label htmlFor="lastname">Votre nom</label>
+            <input
+              value={inputName}
+              onChange={(e) => inputNameChange(e.target.value)}
+              type="text"
+              name="lastname"
+              id="lastname"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="age">Votre âge</label>
+            <input
+              value={inputAge}
+              onChange={(e) => inputAgeChange(e.target.value)}
+              type="number"
+              name="age"
+              id="age"
+            />
+          </div>
 
-        <button className="submit-form">Soumettre</button>
-      </form>
-
-      {/* Ma liste */}
-      <MyList data={idendity} />
+          <button className="submit-form">Soumettre</button>
+        </form>
+        {/* Ma liste */}
+        <MyList data={idendity} />
+      </div>
+      <div className="second-block"></div>
     </div>
   );
 }
