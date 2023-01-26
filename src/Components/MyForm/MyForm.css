@@ -1,0 +1,55 @@
+.form-modal {
+  background-color: white;
+  border-radius: 15px;
+  min-width: 500px;
+  max-width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-group {
+  display: block;
+  margin: 10px 0;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.submit-form {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.info-title::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(161, 54, 249);
+  margin: 5px 0;
+}
+
+.validation-msg {
+  background-color: rgb(211, 165, 255);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.error {
+  background-color: rgb(255, 165, 165);
+}

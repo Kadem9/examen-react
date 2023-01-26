@@ -1,0 +1,16 @@
+.list-users {
+  margin: 5px;
+}
+
+.age-user {
+  margin-left: 5px;
+}
+
+.info-title::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(161, 54, 249);
+  margin: 5px 0;
+}
